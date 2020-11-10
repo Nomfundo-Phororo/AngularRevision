@@ -1,3 +1,4 @@
+import { SummaryPipe } from './summary.pipe';
 import { CourseService } from './courses.service';
 import { CoursesComponent } from './courses.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -10,12 +11,13 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CoursesComponent
+    CoursesComponent,
+    SummaryPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule, 
   ],
   providers: [CourseService],
   bootstrap: [AppComponent]
